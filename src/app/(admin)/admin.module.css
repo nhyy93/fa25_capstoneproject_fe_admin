@@ -456,3 +456,133 @@
         grid-template-columns: 1fr;
     }
 }
+
+/* ==== Compact Table Layout for Account Manager ==== */
+.panelHead {
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+}
+
+.filters {
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.input,
+.select {
+  height: 34px;
+  padding: 0 10px;
+  font-size: 13px;
+  border-radius: 8px;
+  min-width: 160px;
+}
+
+.tableWrap {
+  margin-top: 8px;
+  border-radius: 10px;
+}
+
+.table {
+  font-size: 13px;
+}
+
+.table th,
+.table td {
+  padding: 8px 10px;
+  white-space: nowrap;
+}
+
+.table thead th {
+  font-weight: 700;
+  font-size: 12.5px;
+  letter-spacing: 0.2px;
+  color: var(--muted);
+}
+
+.rowActions {
+  justify-content: flex-end;
+  gap: 6px;
+}
+
+.linkBtn {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--brand);
+  transition: opacity 0.15s ease;
+}
+
+.linkBtn:hover {
+  opacity: 0.75;
+}
+
+.badgeSuccess,
+.badgeWarn {
+  font-size: 11.5px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 999px;
+}
+
+.pagination {
+  padding-top: 12px;
+  justify-content: center;
+  gap: 12px;
+}
+
+.pageBtn {
+  padding: 6px 10px;
+  font-size: 13px;
+  border-radius: 8px;
+}
+
+.pageDots {
+  font-size: 13px;
+  gap: 6px;
+}
+
+.panel {
+  box-shadow: none;
+  border: 1px solid color-mix(in srgb, var(--line) 90%, transparent);
+}
+
+.errorBox {
+  padding: 16px;
+  text-align: center;
+  color: #ef4444;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+@media (max-width: 900px) {
+  .filters {
+    gap: 4px;
+  }
+
+  .input,
+  .select {
+    min-width: 140px;
+  }
+
+  .table th,
+  .table td {
+    padding: 6px 8px;
+  }
+}
+
+.pager {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;           
+  padding-top: 12px;
+}
+
+.pager span {
+  min-width: 110px;    
+  text-align: center;
+}
+
+.pager .linkBtn {
+  white-space: nowrap;  
+}

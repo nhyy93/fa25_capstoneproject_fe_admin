@@ -8,8 +8,14 @@ import s from "./admin.module.css";
 const NAV = [
   { href: "/dashboard", label: "Dashboard", icon: <DashIcon /> },
   { href: "/users", label: "Account manager", icon: <UsersIcon /> },
+
+  { href: "/organizations", label: "Organizations", icon: <OrgIcon /> },
+  { href: "/plans", label: "Subscription plans", icon: <PlanIcon /> },
+  { href: "/support-tickets", label: "Support tickets", icon: <TicketIcon /> },
+
   { href: "/exports", label: "Exports", icon: <FileIcon /> },
   { href: "/billing", label: "Billing history", icon: <CardIcon /> },
+  { href: "/templates", label: "Templates", icon: <MapIcon /> },
 ];
 
 export default function AdminLayout({ children }: { children: React.ReactNode }) {
@@ -79,3 +85,18 @@ function SettingsIcon(){return(<svg width="18" height="18" viewBox="0 0 24 24" f
 function SignOutIcon(){return(<svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M9 21H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h2" stroke="currentColor" strokeWidth="2"/><path d="M16 17l5-5-5-5" stroke="currentColor" strokeWidth="2"/><path d="M21 12H9" stroke="currentColor" strokeWidth="2"/></svg>)}
 function BurgerIcon(){return(<svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/></svg>)}
 function BellIcon(){return(<svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6 8a6 6 0 1 1 12 0c0 7 3 7 3 9H3c0-2 3-2 3-9Z" stroke="currentColor" strokeWidth="2"/><path d="M10 21a2 2 0 0 0 4 0" stroke="currentColor" strokeWidth="2"/></svg>)}
+function MapIcon(){return(<svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M3 6l6-3 6 3 6-3v18l-6 3-6-3-6 3V6z" stroke="currentColor" strokeWidth="2" strokeLinejoin="round"/><path d="M9 3v18M15 6v18" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/></svg>)}
+
+function OrgIcon(){return(<svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+  <path d="M3 21V7a2 2 0 0 1 2-2h4v16H3Z" stroke="currentColor" strokeWidth="2"/>
+  <path d="M9 21h12V5a2 2 0 0 0-2-2h-6v18Z" stroke="currentColor" strokeWidth="2"/>
+  <path d="M7 9h2M7 13h2M7 17h2M15 7h2M15 11h2M15 15h2M15 19h2" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+</svg>)}
+function PlanIcon(){return(<svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+  <rect x="3" y="4" width="18" height="16" rx="2" stroke="currentColor" strokeWidth="2"/>
+  <path d="M7 8h10M7 12h6M7 16h8" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+</svg>)}
+function TicketIcon(){return(<svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+  <path d="M4 7h16v3a2 2 0 0 0 0 4v3H4v-3a2 2 0 0 0 0-4V7Z" stroke="currentColor" strokeWidth="2" strokeLinejoin="round"/>
+  <path d="M12 7v10" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+</svg>)}
